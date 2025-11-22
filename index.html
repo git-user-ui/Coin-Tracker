@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="mainHeading">Crypto Price</h1>
+      <div class="searchContainer">
+        <input type="text" id="coinSearch" />
+        <button id="sortMarket">Sort By Mkt Cap</button>
+        <button id="sortPercentage">Sort by Percentage</button>
+      </div>
+      <div class="tableContainer">
+        <table id="coinTable">
+          <thead>
+            <tr>
+              <th>Coin</th>
+              <th>Symbol</th>
+              <th>Price</th>
+              <th>Total Volume</th>
+              <th>Market Cap</th>
+              <th>24h %</th>
+            </tr>
+          </thead>
+          <tbody id="coinList"></tbody>
+        </table>
+
+        <p id="noCoins">No Coins Found</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
